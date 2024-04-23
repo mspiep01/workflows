@@ -1,0 +1,15 @@
+---
+name: Connect to Salesforce sandbox
+command: "sf org login web --alias {{alias}} --instance-url {{url}}"
+tags: ["sf", "salesforce"]
+description: Connect to a Salesforce production org using the Salesforce CLI. This allows you to create an alias to sparate org names on your device.
+arguments:
+  - name: alias
+    description: The name of the org that you want to connect to. This is typically prod. But you may want to use the name of the org or different if you maintain multiple.
+    default_value: prod
+  - name: url
+    description: The URL of the Salesforce instance you want to connect to. Defaults to login, but you may want to use org.my.salesforce.com
+    default_value: https://login.salesforce.com
+author: mattpieper
+author_url: "https://linkedin.com/in/mattpieper"
+shells: []
